@@ -10,11 +10,22 @@ public class Main {
         System.out.println(3+5);
 
         chal1(args);
+        var(args);
     }
 
     public static void chal1(String[] args) throws Exception{
-       System.out.println("\nWilma Auraruna Khalif");
-       System.out.println("Age: " + 20);
+        System.out.println("\nWilma Auraruna Khalif");
+        System.out.println("Age: " + 20);
+        int age= 30;
+      
+    }
+    public static void var(String[] args) {
+         System.out.println("My life expectancy is " + age);
+         float pi = 3.1415926535f;
+         System.out.println("11 pi numbers: " + pi);
+         char myLette = 'L';
+         boolean mybool = true;
     }
 }
+
 
