@@ -8,5 +8,13 @@ public class Main {
         System.out.println("RORRRR");
         System.out.println(3);
         System.out.println(3+5);
+
+        chal1(args);
+    }
+
+    public static void chal1(String[] args) throws Exception{
+       System.out.println("\nWilma Auraruna Khalif");
+       System.out.println("Age: " + 20);
     }
 }
+
