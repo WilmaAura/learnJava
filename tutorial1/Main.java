@@ -16,15 +16,26 @@ public class Main {
     public static void chal1(String[] args) throws Exception{
         System.out.println("\nWilma Auraruna Khalif");
         System.out.println("Age: " + 20);
-        int age= 30;
-      
     }
     public static void var(String[] args) {
+         int age= 30;
          System.out.println("My life expectancy is " + age);
          float pi = 3.1415926535f;
          System.out.println("11 pi numbers: " + pi);
          char myLette = 'L';
          boolean mybool = true;
+    }
+
+    public static void type_casting(String[] args) {
+        //for converting one data type to another
+
+    }
+}
+
+class type_casting{
+    //for converting one data type to another
+    public static void tp(String[] args) {
+
     }
 }
 
