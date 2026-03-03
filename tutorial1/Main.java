@@ -35,7 +35,10 @@ public class Main {
 class type_casting{
     //for converting one data type to another
     public static void tp(String[] args) {
-
+        int myInt = 9;
+        double myDouble = myInt;
+        System.out.println(myInt);
+        System.out.println(myDouble);
     }
 }
 
