@@ -1,6 +1,7 @@
 package moneyManagement;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 class Expense {
     private int id;
@@ -21,7 +22,7 @@ class Expense {
         return amount;
     }
 
-    public LocalDate gettgl() {
+    public LocalDate getTgl() {
         return tgl;
     }
 
@@ -30,4 +31,14 @@ class Expense {
     }
 }
 
+class moneyManager{
+    private ArrayList<Expense> expenses = new ArrayList <>();
+    private ArrayList<Double> incomes = new ArrayList <>();
 
+    public void addExpense(Expense expense){
+        expenses.add(expense);
+    }
+
+    public      
+
+}
