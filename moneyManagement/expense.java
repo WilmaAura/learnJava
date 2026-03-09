@@ -37,8 +37,5 @@ class moneyManager{
 
     public void addExpense(Expense expense){
         expenses.add(expense);
-    }
-
-    public      
-
+    }  
 }
