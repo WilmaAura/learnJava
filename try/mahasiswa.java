@@ -12,7 +12,7 @@ public class mahasiswa {
 
 class Main {
     public static void main (String [] arg){
-        mahasiswa n = new mahasiswa();
+        mahasiswa n = new mahasiswa();          
         n.view();
     }
 }
