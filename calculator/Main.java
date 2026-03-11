@@ -1,5 +1,4 @@
 package calculator;
-
 import java.util.Scanner;
 
 class Calculator {
@@ -25,48 +24,61 @@ class Calculator {
     double sqrt (double num1){
         return Math.sqrt(num1);
     }
-
 }
 
 class View {
     Calculator calc = new Calculator();
     Scanner sc = new Scanner(System.in);
     void view () {
-    System.out.println("--------------------------------");
-    System.out.println("        Basic calculator        ");
-    System.out.println("--------------------------------");
-    System.out.println("Masukkan angka pertama: ");    
-    Double = sc.nextDouble();
-    System.out.println("Masukkan angka kedua: ");
-    calc.num2 = sc.nextDouble();
-
-    System.out.println("\nPilih operasi:");
-    System.out.println("1. Tambah");
-    System.out.println("2. Kurang");
-    System.out.println("3. Kali");
-    System.out.println("4. Bagi");
-    int pilihan = sc.nextInt();
-    switch (pilihan){
-        case 1:
-            System.out.println("Hasil: " + calc.addition());
-            break;
-        case 2:
-            System.out.println("Hasil: " + calc.subtract());
-            break;
-        case 3:
-            System.out.println("Hasil: " + calc.multiply());
-            break;
-        case 4:
-            System.out.println("Hasil: " + calc.division());
-            break;
-    }
+        System.out.println("--------------------------------");
+        System.out.println("        Basic calculator        ");
+        System.out.println("--------------------------------");
+        System.out.println("Masukkan angka pertama: ");    
+        Double a= sc.nextDouble();
+    
+        while(true){
+            System.out.println("\nPilih operasi:");
+            System.out.println("1. Tambah");
+            System.out.println("2. Kurang");
+            System.out.println("3. Kali");
+            System.out.println("4. Bagi");
+            System.out.println("5. Pangkat");
+            System.out.println("6. Square root");
+            System.out.println("7. Hasil akhir");
+            int pilihan = sc.nextInt();
+            
+            if (pilihan == 7){
+                System.out.println("Hasil akhir: " + a);
+                break;
+            }
+            if (pilihan == 6){
+                System.out.println("Hasil sementara/akhir: " + a);
+                continue;
+            }
+            System.out.println("Masukkan angka kedua:");
+            double b = sc.nextDouble();
+            switch (pilihan){
+                case 1:
+                    System.out.println("Hasil: " + calc.addition(a,b));
+                    break;
+                case 2:
+                    System.out.println("Hasil: " + calc.subtract(a,b));
+                    break;
+                case 3:
+                    System.out.println("Hasil: " + calc.multiply(a,b));
+                    break;
+                case 4:
+                    System.out.println("Hasil: " + calc.division(a,b));
+                    break;
+                default:
+                    System.out.println("Operasi tidak valid");
+                }    
+            }   
     }
 }
-
 public class Main {
-    public static void main (){
-        View vi = new View ();
-        vi.view();
+        public static void main (String[] arg){
+            View vi = new View ();
+            vi.view();
+        }
     }
-}
-
