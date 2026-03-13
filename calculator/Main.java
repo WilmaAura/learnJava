@@ -22,6 +22,10 @@ class Calculator {
     }
     
     double sqrt (double num1){
+        if (num1 < 0){
+            System.out.println("Tidak bisa diakarkan");
+            return num1;
+        }
         return Math.sqrt(num1);
     }
 }
@@ -45,6 +49,7 @@ class View {
             System.out.println("5. Pangkat");
             System.out.println("6. Square root");
             System.out.println("7. Hasil akhir");
+
             int pilihan = sc.nextInt();
             
             if (pilihan == 7){
@@ -52,6 +57,7 @@ class View {
                 break;
             }
             if (pilihan == 6){
+                a = calc.sqrt(a);
                 System.out.println("Hasil sementara/akhir: " + a);
                 continue;
             }
@@ -59,20 +65,21 @@ class View {
             double b = sc.nextDouble();
             switch (pilihan){
                 case 1:
-                    System.out.println("Hasil: " + calc.addition(a,b));
+                     a =  calc.addition(a,b);
                     break;
                 case 2:
-                    System.out.println("Hasil: " + calc.subtract(a,b));
+                     a =  calc.subtract(a,b);
                     break;
                 case 3:
-                    System.out.println("Hasil: " + calc.multiply(a,b));
+                    a =  calc.multiply(a,b);
                     break;
                 case 4:
-                    System.out.println("Hasil: " + calc.division(a,b));
+                    a =  calc.division(a,b);
                     break;
                 default:
                     System.out.println("Operasi tidak valid");
                 }    
+            System.out.println("Hasil sementera: " + a);
             }   
     }
 }
