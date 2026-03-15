@@ -25,7 +25,6 @@ class Mobil2{
     
     void gantiGigi(int gigiBaru){
         gigi = gigiBaru;
-        System.out.println("Ganti gigi: ");
+        System.out.println("Ganti gigi: " + gigi);
     }
-    
 }

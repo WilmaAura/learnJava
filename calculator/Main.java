@@ -76,6 +76,9 @@ class View {
                 case 4:
                     a =  calc.division(a,b);
                     break;
+                case 5:
+                    a = calc.power(a,b);
+                    break;
                 default:
                     System.out.println("Operasi tidak valid");
                 }    
