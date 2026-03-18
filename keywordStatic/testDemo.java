@@ -10,6 +10,13 @@ class test{
     public void addCounter(){
         counter += 1;
     }
+    // Add fungsi static dan biasa
+    public static void fungsiStatic(){
+        System.out.println("Ini fungsi static");
+    }
+    public void fungsiBiasa(){
+        System.out.println("Ini fungsi biasa");
+    }
 }
 
 public class testDemo{
@@ -21,6 +28,7 @@ public class testDemo{
     System.out.println("Counter milik obj1: " + obj1.getCounter());
     System.out.println("Counter milik obj2: " + obj2.getCounter());
     System.out.println("Counter milik obj3: " + obj3.getCounter());
-
+    test.fungsiStatic(); // Tanpa membuat object 
+    obj1.fungsiBiasa();
     }
 }
