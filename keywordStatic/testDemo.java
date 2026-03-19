@@ -29,6 +29,6 @@ public class testDemo{
     System.out.println("Counter milik obj2: " + obj2.getCounter());
     System.out.println("Counter milik obj3: " + obj3.getCounter());
     test.fungsiStatic(); // Tanpa membuat object 
-    obj1.fungsiBiasa();
+    obj1.fungsiBiasa(); //Harus membuat object
     }
 }
