@@ -1,5 +1,5 @@
 package constructor;
-
+// karyawan
 class Karyawan{
     String nama;
     int gaji;
