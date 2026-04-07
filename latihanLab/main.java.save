@@ -1,0 +1,41 @@
+class nasabah{
+	private String norek; //Attribute
+	private String nama;
+	private int saldo;
+	public nasabah (String norek, String nama, int saldo){ //konstruktor
+		this.norek = norek;
+		this.nama = nama;
+		this.saldo = saldo;
+	}
+	public void setNorek(String norek){
+		this.norek = norek;
+	}
+
+	String getNorek(){
+		return norek;
+	}
+
+	public void setSaldo(int saldo){
+		this.saldo=saldo;
+	}
+
+	int getSaldo (){
+		return saldo;
+	}
+	
+	void tampil(){
+		System.out.println("No. Rekening	: " + norek);
+		System.out.println("Nama Nasabah	: " + nama);
+		System.out.println("Saldo		: " + saldo);
+	}
+}
+
+class nasabahBeraksi{
+	public static void main(String[] args){
+		nasabah nas = new nasabah("REK001", "Sunaryo", 100000000);
+		nas.setNorek("REK002");
+		nas.setSaldo(220000);
+		System.out.println("No. Rekening	:" + nas.getNorek());
+		System.out.println("Soldo		:" + nas.getSaldo());
+	}
+}

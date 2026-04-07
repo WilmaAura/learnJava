@@ -46,7 +46,7 @@ class nasabah{
 		System.out.println("Saldo		: " + saldo);
 	}
 }
-
+// mingdep graphic user interface
 class nasabahBeraksi{
 	public static void main(String[] args){
 		// nasabah nas = new nasabah("REK001", "Sunaryo", 100000000);
