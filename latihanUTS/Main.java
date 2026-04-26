@@ -9,9 +9,10 @@ public class Main {
         System.out.println(myobj.x);
         System.out.println("Object 2: " + myobj2.x *5
         );
+        myMethod();
     }    
 
-    static void myMethod(){
+    static void myMethod(){ //used to perform certain actions
         System.out.println("Hai bitch");
     }
 }
@@ -25,3 +26,4 @@ class Second {
         );
     }
 }
+
