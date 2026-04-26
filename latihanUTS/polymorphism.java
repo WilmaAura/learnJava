@@ -29,3 +29,4 @@ class dog extends animal{
         System.out.println("The dog says: hukk ghukk ghukk");
     }
 }
+
