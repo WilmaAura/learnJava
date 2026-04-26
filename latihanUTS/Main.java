@@ -6,6 +6,9 @@ public class Main {
     public static void main(String[] args){
         Main myobj = new Main(); //Object 1
         Main myobj2 = new Main();
+        encapsulation obj1 = new encapsulation(); //encapsulation
+        obj1.setName("Wilma");
+        System.out.println(obj1.getName());
         System.out.println(myobj.x);
         System.out.println("Object 2: " + myobj2.x *5
         );
