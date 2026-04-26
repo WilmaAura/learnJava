@@ -11,7 +11,6 @@ class Mobil {
         System.out.println("Tahun: " + this.tahunProduksi);
     }
 }
-
 public class Konstruktor{
     public static void main(String[] args){
         Mobil mobilku = new Mobil("merah", 2003);
@@ -20,3 +19,5 @@ public class Konstruktor{
         mobilmu.info();
     }
 }
+
+

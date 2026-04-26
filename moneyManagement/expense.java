@@ -24,7 +24,7 @@ class Expense {
 
     public LocalDate getTgl() {
         return tgl;
-    }
+    }`
 
     public String toString() {
         return id + " | " + nBarang + " | " + jBarang + " | " + amount + " | " + tgl;

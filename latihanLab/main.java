@@ -12,6 +12,7 @@ class nasabah{
 	public nasabah(String norek){ //overloading
 		this.norek = norek;
 	}
+	
 	public nasabah (String nama, String alamat){
 		this.nama = nama;
 		this.alamat= alamat;

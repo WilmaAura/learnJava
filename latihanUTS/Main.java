@@ -1,0 +1,27 @@
+package latihanUTS;
+
+public class Main {
+    int x = 5; //Attributes (Variable inside a class)
+    final float pi = 3.14f;
+    public static void main(String[] args){
+        Main myobj = new Main(); //Object 1
+        Main myobj2 = new Main();
+        System.out.println(myobj.x);
+        System.out.println("Object 2: " + myobj2.x *5
+        );
+    }    
+
+    static void myMethod(){
+        System.out.println("Hai bitch");
+    }
+}
+
+class Second {
+    public static void main (String [] args){
+        Main myobj1 = new Main();
+        System.out.println(myobj1.x);
+        System.out.println(
+            "pi:" + myobj1.pi
+        );
+    }
+}
