@@ -16,9 +16,9 @@ abstract class paymentAbstract {
 
 class QRISPayment extends paymentAbstract{
     QRISPayment(double amount){
-        super(amount);
+        super(amount); //call constructor to menyimpan data
     }
-    @Override
+    @Override //untuk menimpa method yang ada di abstract paymentw
     void processPayment(){
         System.out.println("generating QR Code for Rp " + amount);
         System.out.println("Scanning... Success!");
