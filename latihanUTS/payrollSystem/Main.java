@@ -1,5 +1,4 @@
 package latihanUTS.payrollSystem;
-
 class employee{
     protected String name;
     protected double baseSalary;
@@ -15,14 +14,12 @@ class employee{
         return name;
     }
 }
-
 class lecturer extends employee{
     private boolean hasDoctorate;
     public lecturer(String name, double baseSalary, boolean hasDoctorate){
         super(name, baseSalary);
         this.hasDoctorate = hasDoctorate;
     }
-
     @Override
     public double calculateBonus(){
         double bonus = baseSalary * 0.2;
@@ -32,7 +29,6 @@ class lecturer extends employee{
         return bonus;
     }
 }
-
 class adminStaff extends employee {
     public adminStaff(String name, double baseSalary){
         super(name, baseSalary);
@@ -42,7 +38,6 @@ class adminStaff extends employee {
         return 300000;
     }
 }
-
 public class Main {
     public static void main(String[] args) {
         employee [] staffList ={

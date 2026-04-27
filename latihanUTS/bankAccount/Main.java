@@ -4,7 +4,7 @@ class bankAccount {
     private String accountNumber;
     private String ownerName;
     private double balance;
-    bankAccount(String accountNumber, String ownerName, double balance){
+    public bankAccount(String accountNumber, String ownerName, double balance){
         this.accountNumber = accountNumber;
         this.ownerName = ownerName;
         this.balance = balance;
@@ -12,7 +12,7 @@ class bankAccount {
 
 
 
-    bankAccount(String accountNumber, String ownerName){
+    public bankAccount(String accountNumber, String ownerName){
         this(accountNumber, ownerName,0.0);
     }
 
