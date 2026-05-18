@@ -1,8 +1,8 @@
-# PRD SIMULASI MENYELEM
+# PRD (Product Requirements Document) SIMULASI MENYELEM
 
 ## 1. Sistem simulasi diving
 
-berbasis objek. Sistem ini memodelkan perhitungan fisika dasar penyelaman, seperti perubahan tekanan, air, konsumsi oksigen, batas waktu penyelaman tanpa dekompresi, dan manajemen kedalaman - untuk memastikan penyelam menyelam dengan aman.
+berbasis objek. Sistem ini memodelkan perhitungan fisika dasar penyelaman, seperti perubahan tekanan, air, konsumsi oksigen, batas waktu penyelaman tanpa dekompresi, dan manajemen kedalaman untuk memastikan penyelam menyelam dengan aman.
 
 ## 2. Fitur Utama
 
@@ -33,6 +33,8 @@ berbasis objek. Sistem ini memodelkan perhitungan fisika dasar penyelaman, seper
 1. **Inisialisasi:** Pengguna memasukkan data profil awal (Kapasitas tabung dalam liter, tekanan awal dalam BAR, dan SAC rate).
 2. **Mulai Simulasi:** Program mulai loop penyelaman. Penyelam dapat memilih opsi untuk turun kedalaman tertentu (input), diam, atau naik ke permukaan.
 3. **Update Real-time:** Sistem akan mengupdate sisa oksigen, kedalaman, dan batas NDL
+
+   - NDL adalah waktu maksimal penyelam boleh bertahan di kedalaman tertentu tanpa perlu berhenti untuk dekompresi saat naik.
 
 4. **Peringatan:** Jika sisa udara tersisa untuk cadangan naik ke permukaan ditambah safty stop (kedalaman 5 meter selama 3 menit), program akan mengeluarkan intruksi wajib naik.
 
