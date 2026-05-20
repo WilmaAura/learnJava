@@ -1,48 +1,36 @@
 package matematika;
 
-    class matematika{
-        double addition(int var1, int var3) {
-            return var1 + var3;
+    class matematika {
+        public int tambah (int a, int b){
+            return a + b;
         }
-
-        double subtract(int var1, int var3) {
-            return var1 - var3;
+        public int kurang (int a, int b){
+            return a - b;
+        }public int bagi (int a, int b){
+            return a / b;
+        }public int kali (int a, int b){
+            return a * b;
         }
-
-        double multiply(int var1, int var3) {
-            return var1 * var3;
+        //Overloading
+        public double tambah(double a, double b, double c){
+            return a + b + c;
         }
-
-        double division(int var1, int var3) {
-            if (var1 == (int)0.0F) {
-                System.out.println("Tidak bisa dibagi");
-            }
-            return var1/var3;
-            }
-
-        /* overloading */
-        double addition(double var1,double var2, double var3) {
-            return var1 + var2 + var3;
+        public double kurang(double a, double b, double c){
+            return a - b - c;
+        }public double bagi(double a, double b, double c){
+            return a / b / c;
+        }public double kali(double a, double b, double c){
+            return a * b * c;
         }
-
-        double subtract(double var1, double var2, double var3) {
-            return var1 - var2 - var3;
-        }
-
-        double multiply(double var1, double var2, double var3) {
-            return var1 * var2  * var3;
-        }
-
-        double division(double var1, double var2, double var3) {
-            if (var1 == (double)0.0F) {
-                System.out.println("Tidak bisa dibagi");
-            }
-                return var1/var3;
-            }
     }
+
 public class matematikaBeraksi {
     public static void main(String[] args) {
         matematika m = new matematika();
-         System.out.println(m.addition(12.5, 28.7, 14.2));
+        System.out.println(m.tambah(5, 10));
+        System.out.println("---------------");
+        System.out.println(m.tambah(12.5, 28.7, 14.2));
+        System.out.println("---------------");
+        System.out.println(m.kurang(5.1, 1.1, 1.2));
     }    
 }
