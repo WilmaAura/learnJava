@@ -1,4 +1,4 @@
-package asbtractDua;
+package abstractDua;
 
 public class BujurSangkar extends Bangun2D{
     private int sisi;

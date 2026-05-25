@@ -1,4 +1,4 @@
-package asbtractDua;
+package abstractDua;
 
 public class Bangun2DDemo {
     public static void main(String[] args) {
