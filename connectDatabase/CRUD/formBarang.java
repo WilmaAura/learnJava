@@ -164,12 +164,12 @@ public class formBarang extends javax.swing.JFrame {
         xjumlah.setText(jTable1.getValueAt(jTable1.getSelectedRow(),3).toString());
         xharga.setText(jTable1.getValueAt(jTable1.getSelectedRow(),4).toString());
     }
+}
 
-    public static void main (String args[]){
+public static void main (String args[]){
         java.awt.EventQueue.invokeLater(new Runnable(){
             public void run(){
                 new formBarang().setVisible(true);
             }
         });
-    }
 }

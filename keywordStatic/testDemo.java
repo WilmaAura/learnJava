@@ -18,7 +18,6 @@ class test{
         System.out.println("Ini fungsi biasa");
     }
 }
-
 public class testDemo{
     public static void main(String[] args){
     test obj1 = new test();

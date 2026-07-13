@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class diveSimulation{
-    public static void main(String[] args){
+    public static void main(String[] args)
         Scanner sc = new Scanner(System.in);
         System.out.println("--- DEEP BLUE JAVA SIMULATOR ---");
         System.out.println("Masukkan Nama Penyelam: ");
@@ -13,5 +13,5 @@ public class diveSimulation{
         System.out.println("SAC Rate kamu (Liter/menit, Rata-rata 20):");
         double sac = sc.nextDouble();
         diver penyelam = new diver(name, capacity, pressure, sac);
-    }
+    
 }

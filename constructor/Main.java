@@ -14,4 +14,4 @@ public class Main{
         System.out.println("Nama:" + s1.nama);
         System.out.println("Kelas:" + s1.kelas);
     }
-}
+} 

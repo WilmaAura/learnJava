@@ -6,8 +6,6 @@ import javax.swing.JOptionPane;
 public class Main {
     public static void main(String[] args) {
         CRUD crud = new CRUD();
-        
-        // Menampilkan Nama dan NIM di awal program
         JOptionPane.showMessageDialog(null, 
                 "Nama: Wilma Auraruna Khalif\nNIM: A11.2024.15841", 
                 "Identitas Mahasiswa", 
@@ -25,8 +23,6 @@ public class Main {
                     Pilih menu (masukkan angka):""";
             
             String pilihan = JOptionPane.showInputDialog(null, menu, "Aplikasi Obat", JOptionPane.QUESTION_MESSAGE);
-            
-            // Jika user menekan tombol Cancel atau menyilang dialog pop-up
             if (pilihan == null) {
                 break;
             }
@@ -59,22 +55,22 @@ class CRUD {
     public void tambahObat () {
         String sql = "INSERT INTO obat VALUES (?, ?, ?, ?, ?, ?, ?)";
         
-        javax.swing.JTextField txtKode = new javax.swing.JTextField();
-        javax.swing.JTextField txtNama = new javax.swing.JTextField();
-        javax.swing.JTextField txtSatuan = new javax.swing.JTextField();
-        javax.swing.JTextField txtStok = new javax.swing.JTextField();
-        javax.swing.JTextField txtMin = new javax.swing.JTextField();
-        javax.swing.JTextField txtExpired = new javax.swing.JTextField();
-        javax.swing.JTextField txtSupplier = new javax.swing.JTextField();
+        javax.swing.JTextField Kode = new javax.swing.JTextField();
+        javax.swing.JTextField Nama = new javax.swing.JTextField();
+        javax.swing.JTextField Satuan = new javax.swing.JTextField();
+        javax.swing.JTextField Stok = new javax.swing.JTextField();
+        javax.swing.JTextField Min = new javax.swing.JTextField();
+        javax.swing.JTextField Expired = new javax.swing.JTextField();
+        javax.swing.JTextField Supplier = new javax.swing.JTextField();
 
         Object[] formInput = {
-            "Kode Obat:", txtKode,
-            "Nama Obat:", txtNama,
-            "Satuan Obat:", txtSatuan,
-            "Jumlah Stok:", txtStok,
-            "Jumlah Min:", txtMin,
-            "Expired Date (YYYY-MM-DD):", txtExpired,
-            "Supplier:", txtSupplier
+            "Kode Obat:", Kode,
+            "Nama Obat:", Nama,
+            "Satuan Obat:", Satuan,
+            "Jumlah Stok:", Stok,
+            "Jumlah Min:", Min,
+            "Expired Date (YYYY-MM-DD):", Expired,
+            "Supplier:", Supplier
         };
 
         int opsi = JOptionPane.showConfirmDialog(null, formInput, "Form Tambah Obat", JOptionPane.OK_CANCEL_OPTION);
@@ -83,13 +79,13 @@ class CRUD {
             try (Connection conn = connectDB.getConnection();
                  PreparedStatement pstmt = conn.prepareStatement(sql)) {
 
-                String kode = txtKode.getText();
-                String nama = txtNama.getText();
-                String satuan = txtSatuan.getText();
-                int stok = Integer.parseInt(txtStok.getText());
-                int min = Integer.parseInt(txtMin.getText());
-                String expired = txtExpired.getText();
-                String supplier = txtSupplier.getText();
+                String kode = Kode.getText();
+                String nama = Nama.getText();
+                String satuan = Satuan.getText();
+                int stok = Integer.parseInt(Stok.getText());
+                int min = Integer.parseInt(Min.getText());
+                String expired = Expired.getText();
+                String supplier = Supplier.getText();
 
                 pstmt.setString(1, kode);
                 pstmt.setString(2, nama);
